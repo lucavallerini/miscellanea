@@ -28,7 +28,7 @@
 # E-mail: lucavall90@gmail.com
 #
 # Date: 2016-10-22
-# Last update: 2016-10-22
+# Last update: 2016-10-26
 
 import numpy as np
 
