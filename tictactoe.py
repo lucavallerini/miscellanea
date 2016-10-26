@@ -1,5 +1,5 @@
 # A basic Tic Tac Toe game in Python.
-# 
+ 
 # This code is licensed under the MIT License.
 #
 # MIT License
@@ -171,5 +171,5 @@ def move(table, player):
 
 print "Welcome on Tic Tac Toe game!"
 board_size = int(input("Insert the size of the board: "))
-print "OK, let's the game begin!"
+print "OK, let the game begin!"
 game_play(board_size)
