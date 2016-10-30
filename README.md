@@ -1,4 +1,6 @@
-# Miscellanea
+# **Miscellanea**
 
 
-tictactoe: a simple Python script for a Tic Tac Toe game.
+_tictactoe_: a simple Python script for a Tic Tac Toe game.
+
+_hangman.py_: a simple The Hangman game (dictionary sowpods.txt) in Python.
