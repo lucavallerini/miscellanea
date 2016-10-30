@@ -1,18 +1,18 @@
 import random
 
 
-def choose_a_word():
-    with open('sowpods.txt', 'r') as dictionary:
+def choose_a_word(lang):
+    with open(lang + '.txt', 'r') as dictionary:
         lines = dictionary.readlines()
 
-    return random.choice(lines).strip()
+    return random.choice(lines).strip().upper()
 
 
 def game():
     player = raw_input("Insert your name: ").upper()
     print "Hi %s! Let begin the game." % player
 
-    word = choose_a_word()
+    word = choose_a_word('italian')  # italian, english
     show_word = "_" * len(word)
     print word
 
