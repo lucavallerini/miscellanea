@@ -73,7 +73,7 @@ def game(player, lang):
             print "You're guess is wrong."
             if turn >= 6:
                 hangman(turn, show_word, guesses)
-                print "Sorry, you lost."
+                print "Sorry, you lost. The word is %s" % word
                 break
 
         hangman(turn, show_word, guesses)
