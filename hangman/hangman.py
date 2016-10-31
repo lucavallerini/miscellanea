@@ -124,7 +124,7 @@ def start():
     print "Dictionary available: "
     print "1) English"
     print "2) Italian"
-    dictionary = raw_input("Now %s, choose the dictionary you want to play with: " % player)
+    dictionary = raw_input("Now %s, choose the dictionary you want to play with: " % player).strip()
 
     if dictionary == '1':
         game(player, 'english')
