@@ -46,7 +46,7 @@ def choose_a_word(lang):
 # a dictionary choose by the player.
 def game(player, lang):
     word = choose_a_word(lang)
-    show_word = "_" * len(word)
+    show_word = "-" * len(word)
 
     turn = 0
     guesses = ""
@@ -64,7 +64,7 @@ def game(player, lang):
             for i in range(len(word)):
                 if word[i] == move:
                     show_word = show_word[:i] + move + show_word[i + 1:]
-            if show_word.find('_') == -1:
+            if show_word.find('-') == -1:
                 hangman(turn, show_word, guesses)
                 print "Congratulations %s, you win!" % player
                 break
@@ -73,7 +73,8 @@ def game(player, lang):
             print "You're guess is wrong."
             if turn >= 6:
                 hangman(turn, show_word, guesses)
-                print "Sorry, you lost. The word is %s" % word
+                print "Sorry %s, you lost." % player
+                print "The word is %s." % word
                 break
 
         hangman(turn, show_word, guesses)
