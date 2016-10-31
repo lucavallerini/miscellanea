@@ -36,6 +36,7 @@ from array import array
 # Draw the board game
 def draw_board_game(values):
     print "   1   2   3   4   5   6   7   8"  # columns coordinates
+
     for i in range(8):
         print "  " + " ---" * 8
 
@@ -53,7 +54,7 @@ def draw_board_game(values):
 
 # Start the game
 def start():
-    print "Welcome tn Italian draughts!\n"
+    print "Welcome to Italian draughts!\n"
 
     board = array('c', [])
     for i in range(64):
