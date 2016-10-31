@@ -1,4 +1,5 @@
 import random
+from sys import exit
 
 
 def choose_a_word(lang):
@@ -8,11 +9,8 @@ def choose_a_word(lang):
     return random.choice(lines).strip().upper()
 
 
-def game():
-    player = raw_input("Insert your name: ").upper()
-    print "Hi %s! Let begin the game." % player
-
-    word = choose_a_word('italian')  # italian, english
+def game(player, lang):
+    word = choose_a_word(lang)  # italian, english
     show_word = "_" * len(word)
     print word
 
@@ -81,5 +79,22 @@ def hangman(turn, word, guesses):
     print "Already guessed: " + guesses + "\n"
 
 
-print "Welcome to the Hangman game!"
-game()
+def start():
+    print "Hi! Welcome to The Hangman game!"
+    player = raw_input("What's your name? ").strip().upper()
+
+    print "Dictionary available: "
+    print "1) English"
+    print "2) Italian"
+    dictionary = raw_input("Now %s, choose the dictionary you want to play with: " % player)
+
+    if dictionary == '1':
+        game(player, 'english')
+    elif dictionary == '2':
+        game(player, 'italian')
+    else:
+        print "Wrong choice, quitting..."
+        exit(0)
+
+
+start()
