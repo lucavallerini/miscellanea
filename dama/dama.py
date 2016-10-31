@@ -30,11 +30,10 @@
 # Date: 2016-10-31
 # Last update: 2016-10-31
 
-
-# Draw the board game
 from array import array
 
 
+# Draw the board game
 def draw_board_game(values):
     print "   1   2   3   4   5   6   7   8"  # columns coordinates
     for i in range(8):
@@ -43,13 +42,29 @@ def draw_board_game(values):
         row = str(i + 1) + " "  # lines coordinates
         for j in range(8):
             if j == 7:
-                row += "| " + values[2 * i + j] + " |"
+                row += "| " + values[8 * i + j] + " |"
             else:
-                row += "| " + values[2 * i + j] + " "
+                row += "| " + values[8 * i + j] + " "
 
         print row
 
     print "  " + " ---" * 8
 
 
-draw_board_game(array('c', ['.'] * 64))
+# Start the game
+def start():
+    print "Welcome tn Italian draughts!\n"
+
+    board = array('c', [])
+    for i in range(64):
+        if ((0 <= i < 8 or 16 <= i < 24) and i % 2 == 0) or ((8 <= i < 16) and (i + 1) % 2 == 0):
+            board.append('x')
+        elif ((40 <= i < 48 or 56 <= i < 64) and (i + 1) % 2 == 0) or ((48 <= i < 56) and i % 2 == 0):
+            board.append('y')
+        else:
+            board.append(' ')
+
+    draw_board_game(board)
+
+
+start()
