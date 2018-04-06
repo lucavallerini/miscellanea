@@ -11,7 +11,7 @@ A collection of CSS stylesheets to apply a dark theme on websites.
 A Python script that helps to compute the average balance of a bank account. The average balance is used in Italy as a parameter to access some welfare benefits. USE IT AT YOUR OWN RISK.
 
 ## Money Lover
-Script that aims to convert a MLX file (a backup file of the app [Money Lover](https://moneylover.me/)) into a more useful file tha can be imported on desktop applications such as GNU Cash or KMyMoney.
+Script that aims to convert a MLX file (a backup file of the app [Money Lover](https://moneylover.me/)) into a more useful file tha can be imported on desktop applications such as [GnuCash](https://www.gnucash.org/) or [KMyMoney](https://www.gnucash.org/).
 
 ## My Anime List
 Script that converts XML files downloaded from [MyAnimeList](https://myanimelist.net/) website.
