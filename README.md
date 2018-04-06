@@ -1,5 +1,3 @@
-# Miscellanea
-
 ## Android
 Bash script to automatize the OS update of a Nexus 5. Due to the Nexus 5 reaching EOL the script is not finished.
 
