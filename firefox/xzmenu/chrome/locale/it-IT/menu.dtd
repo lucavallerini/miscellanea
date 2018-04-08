@@ -1,0 +1,115 @@
+<!--
+* Entities list about:
+*   chrome://xzmenu/content/menu.xul
+*
+* @ author:         Luca90
+* @ homepage:       http://www.luca90.netsons.org/site/addons/index.php
+* @ email:          lucavall90@gmail.com
+* @ subversion:     0.3.1
+* @ last modified:  26th August 2007 19:38 pm 
+*
+* Notes:
+*   Check comments language 
+-->
+
+<!-- label entites -->
+<!ENTITY xz.menu.label.extenzilla "eXtenZilla">
+
+  <!ENTITY xz.menuitem.label.homepage "Portale">
+
+  <!ENTITY xz.menu.label.forum "Forum">
+    <!ENTITY xz.menuitem.label.unread "Mostra le discussioni non lette dall'ultima visita">
+    <!ENTITY xz.menuitem.label.unreadreplies "Mostra le nuove risposte alle tue discussioni">
+    <!ENTITY xz.menuitem.label.homeforum "Pagina principale">
+    <!ENTITY xz.menuitem.label.news "Annunci">
+    <!ENTITY xz.menuitem.label.bugs "Segnalazione BUG">
+    <!ENTITY xz.menuitem.label.extsupport "Supporto estensioni">
+    <!ENTITY xz.menuitem.label.internationalsupport "International support">
+    <!ENTITY xz.menuitem.label.extsdocs "Estensioni e documentazione">
+    <!ENTITY xz.menuitem.label.newupdateexts "Aggiornamenti e nuove estensioni">
+    <!ENTITY xz.menuitem.label.publicqa "Q.A. Pubblico">
+    <!ENTITY xz.menuitem.label.offtopic "Off-topic">
+    <!ENTITY xz.menuitem.label.extenzelig "eXtenZelig">
+
+  <!ENTITY xz.menu.label.tools "Strumenti">
+    <!ENTITY xz.menuitem.label.loginout "Login">
+    <!ENTITY xz.menuitem.label.search "Ricerca">
+    <!ENTITY xz.menuitem.label.viewprofile "Visualizza profilo">
+    <!ENTITY xz.menuitem.label.releaseexts "Rilascia estensione">
+  
+    <!ENTITY xz.menu.label.feedrss "Feed RSS">
+      <!ENTITY xz.menuitem.label.exts "Estensioni">
+      <!ENTITY xz.menuitem.label.themes "Temi">
+
+  <!ENTITY xz.menuitem.label.tutorials "Guide">
+
+  <!ENTITY xz.menu.label.exts "Estensioni">
+    <!ENTITY xz.menuitem.label.completelist "Lista completa">
+  <!ENTITY xz.menu.label.themes "Temi">
+    <!ENTITY xz.menuitem.label.ff "Firefox">
+    <!ENTITY xz.menuitem.label.tb "Thunderbird">
+    <!ENTITY xz.menuitem.label.sm "Seamonkey">
+    <!ENTITY xz.menuitem.label.nvu "NVU">
+    <!ENTITY xz.menuitem.label.sb "Sunbird">
+    <!ENTITY xz.menuitem.label.ns "Netscape">
+    <!ENTITY xz.menuitem.label.fl "Flock">
+    
+  <!ENTITY xz.menu.label.links "Link utili">
+    <!ENTITY xz.menuitem.label.bz "BabelZilla">
+    <!ENTITY xz.menuitem.label.mi "Mozilla Italia">
+    <!ENTITY xz.menuitem.label.mozorg "Mozilla.org">
+    <!ENTITY xz.menuitem.label.mozcom "Mozilla.com">
+    <!ENTITY xz.menuitem.label.amo "Mozilla update">
+    <!ENTITY xz.menuitem.label.addm "Addons Mirror">
+    
+  <!ENTITY xz.toolbarbutton.label.extenzilla "eXtenZilla">
+
+<!-- accesskey enteties -->
+<!ENTITY xz.menu.accesskey.extenzilla "X">
+
+  <!ENTITY xz.menuitem.accesskey.homepage "P">
+
+  <!ENTITY xz.menu.accesskey.forum "F">
+    <!ENTITY xz.menuitem.accesskey.unread "l">
+    <!ENTITY xz.menuitem.accesskey.unreadreplies "r">
+    <!ENTITY xz.menuitem.accesskey.homeforum "P">
+    <!ENTITY xz.menuitem.accesskey.news "A">
+    <!ENTITY xz.menuitem.accesskey.bugs "B">
+    <!ENTITY xz.menuitem.accesskey.extsupport "S">
+    <!ENTITY xz.menuitem.accesskey.internationalsupport "I">
+    <!ENTITY xz.menuitem.accesskey.extsdocs "E">
+    <!ENTITY xz.menuitem.accesskey.newupdateexts "g">
+    <!ENTITY xz.menuitem.accesskey.publicqa "Q">
+    <!ENTITY xz.menuitem.accesskey.offtopic "O">
+    <!ENTITY xz.menuitem.accesskey.extenzelig "X">
+
+  <!ENTITY xz.menu.accesskey.tools "S">
+    <!ENTITY xz.menuitem.accesskey.loginout "L">
+    <!ENTITY xz.menuitem.accesskey.search "R">
+    <!ENTITY xz.menuitem.accesskey.viewprofile "p">
+    <!ENTITY xz.menuitem.accesskey.releaseexts "e">
+  
+    <!ENTITY xz.menu.accesskey.feedrss "R">
+      <!ENTITY xz.menuitem.accesskey.exts "E">
+      <!ENTITY xz.menuitem.accesskey.themes "T">
+
+  <!ENTITY xz.menuitem.accesskey.tutorials "G">
+
+  <!ENTITY xz.menu.accesskey.exts "E">
+    <!ENTITY xz.menuitem.accesskey.completelist "c">
+  <!ENTITY xz.menu.accesskey.themes "T">
+    <!ENTITY xz.menuitem.accesskey.ff "F">
+    <!ENTITY xz.menuitem.accesskey.tb "T">
+    <!ENTITY xz.menuitem.accesskey.sm "S">
+    <!ENTITY xz.menuitem.accesskey.nvu "V">
+    <!ENTITY xz.menuitem.accesskey.sb "b">
+    <!ENTITY xz.menuitem.accesskey.ns "N">
+    <!ENTITY xz.menuitem.accesskey.fl "F">
+    
+  <!ENTITY xz.menu.accesskey.links "u">
+    <!ENTITY xz.menuitem.accesskey.bz "B">
+    <!ENTITY xz.menuitem.accesskey.mi "I">
+    <!ENTITY xz.menuitem.accesskey.mozorg "o">
+    <!ENTITY xz.menuitem.accesskey.mozcom "c">
+    <!ENTITY xz.menuitem.accesskey.amo "u">
+    <!ENTITY xz.menuitem.accesskey.addm "A">

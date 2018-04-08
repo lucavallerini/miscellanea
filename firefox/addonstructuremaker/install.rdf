@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	   xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+	 
+	 <Description about="urn:mozilla:install-manifest">
+	 	
+		<em:id>{4ce35427-144d-42ac-8753-530d92012340}</em:id>
+		<em:version>0.1</em:version>
+		<em:type>2</em:type>
+		<em:name>Add-on Structure Maker</em:name>
+		<em:description></em:description>
+		<em:creator>Luca90</em:creator>
+		<em:developer></em:developer>
+		<em:contributor>eXtenZilla.org Team (http://www.extenzilla.org/)</em:contributor>
+		<em:translator>Luca90 (en-US it-IT locales)</em:translator>
+		<em:homepageURL>http://luca90.netsons.org/ext.php?locale=en-US;id=4ce35427-144d-42ac-8753-530d92012340</em:homepageURL>
+		<em:updateURL>https://luca90.netsons.org/update.rdf</em:updateURL>
+		<em:optionsURL>chrome://esm/content/settings.xul</em:optionsURL>
+		<em:aboutURL>chrome://esm/content/about.xul</em:aboutURL>
+		<em:iconURL>chrome://esm/skin/icon.png</em:iconURL>
+		
+	  <!-- Add-on metadata for localized version (new in Gecko 1.9) -->
+		<em:localized>
+			<Description>
+				<em:locale>en-US</em:locale>
+				<em:name>Add-on Structure Maker</em:name>
+				<em:description></em:description>
+				<em:creator>Luca90</em:creator>
+				<em:homepageURL>http://luca90.netsons.org/ext.php?locale=en-US;id=4ce35427-144d-42ac-8753-530d92012340</em:homepageURL>
+				<em:developer></em:developer>
+				<em:tranlator>Luca90</em:tranlator>
+				<em:contributor>eXtenZilla.org Team (http://www.extenzilla.org/)</em:contributor>
+			</Description>
+		</em:localized>
+		
+		<em:localized>
+			<Description>
+				<em:locale>it-IT</em:locale>
+				<em:name>Add-on Structure Maker</em:name>
+				<em:description>Permettere di creare la struttura di un componente aggiuntivo attraverso una semplice procedura guidata.</em:description>
+				<em:creator>Luca90</em:creator>
+				<em:homepageURL>http://luca90.netsons.org/ext.php?locale=it-IT;id=4ce35427-144d-42ac-8753-530d92012340</em:homepageURL>
+				<em:developer></em:developer>
+				<em:tranlator>Luca90</em:tranlator>
+				<em:contributor>eXtenZilla.org Team (http://www.extenzilla.org/)</em:contributor>
+			</Description>
+		</em:localized>
+		
+    <!-- Obsolete property for older version compatibility -->
+		<em:file>
+			<Description about="urn:mozilla:extension:file:esm.jar">
+				<em:package>content/</em:package>
+				<em:skin>skin/classic/</em:skin>
+				<em:locale>locale/en-US/</em:locale>
+				<em:locale>locale/it-IT/</em:locale>
+			</Description>
+		</em:file>
+		
+    <!-- Mozilla Firefox (Firebird, Phoenix) Target Application -->
+		<em:targetApplication>
+			<Description>
+				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+				<em:minVersion>0.6</em:minVersion>
+				<em:maxVersion>3.0a7</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+		
+    <!-- Mozilla Application Suite Target Application -->
+		<em:targetApplication>
+			<Description>
+				<em:id>{86c18b42-e466-45a9-ae7a-9b95ba6f5640}</em:id>
+				<em:minVersion>1.7</em:minVersion>
+				<em:maxVersion>1.8</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+
+    <!-- Seamonkey Application Suite Target Application -->
+		<em:targetApplication>
+			<Description>
+				<em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
+				<em:minVersion>1.0</em:minVersion>
+				<em:maxVersion>1.0.*</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+		
+    <!-- Flock Target Application -->
+		<em:targetApplication>
+			<Description>
+				<em:id>{a463f10c-3994-11da-9945-000d60ca027b}</em:id>
+				<em:minVersion>0.4</em:minVersion>
+				<em:maxVersion>1.0</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+	
+    <!-- Netscape Navigator Target Application -->
+		<em:targetApplication>
+			<Description>
+				<em:id>{3db10fab-e461-4c80-8b97-957ad5f8ea47}</em:id>
+				<em:minVersion>8.0</em:minVersion>
+				<em:maxVersion>9.0</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+		
+	 </Description>
+ 
+</RDF>

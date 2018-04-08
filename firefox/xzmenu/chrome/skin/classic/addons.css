@@ -1,0 +1,16 @@
+/* CSS Document - ReleaseExt */
+description {
+	width: 100px;
+}
+
+textbox {
+	min-width: 300px;
+}
+
+#ffc, #tbc, #msc, #smc, #nsc, #flc, #sbc, #nvuc {
+	width: 150px;
+} 
+
+#fft, #tbt, #mst, #smt, #nst, #flt, #sbt, #nvut {
+  width: 340px;
+}

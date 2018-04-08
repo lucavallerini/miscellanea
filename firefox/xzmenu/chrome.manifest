@@ -1,0 +1,10 @@
+content	xzmenu	jar:chrome/xzmenu.jar!/content/
+overlay	chrome://browser/content/browser.xul	  chrome://xzmenu/content/menu.xul
+overlay chrome://navigator/content/navigator.xul  chrome://xzmenu/content/menu.xul
+
+skin xzmenu classic/1.0 jar:chrome/xzmenu.jar!/skin/classic/
+style	chrome://global/content/customizeToolbar.xul	chrome://xzmenu/skin/menu.css
+style chrome://xzmenu/content/menu.xul	  chrome://xzmenu/skin/classic/menu.css
+style chrome://xzmenu/content/addons.xul  chrome://xzmenu/skin/classic/addons.css
+
+locale xzmenu it-IT jar:chrome/xzmenu.jar!/locale/it-IT/

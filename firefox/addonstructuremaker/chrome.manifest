@@ -1,0 +1,8 @@
+content asm jar:chrome/asm.jar!/content/
+overlay chrome://browser/content/browser.xul chrome://asm/content/overlay.xul
+overlay chrome://navigator/content/navigator.xul chrome://asm/content/overlay.xul
+
+locale asm	en-US		jar:chrome/asm.jar!/locale/en-US/
+locale asm  it-IT		jar:chrome/asm.jar!/locale/it-IT/
+
+skin	asm	classic/1.0	jar:chrome/asm.jar!/skin/

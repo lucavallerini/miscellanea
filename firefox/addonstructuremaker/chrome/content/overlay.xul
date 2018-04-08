@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://asm/locale/overlay.dtd">
+
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <commandset>
+    <command id="cmd_loadWizard" oncommand="window.open('chrome://asm/content/wizard.xul', '', 'chrome, width=400, height=300, centerscreen=yes, resizable=yes, dialog=yes, minimizable=yes');" />
+  </commandset>
+
+  <keyset>
+    <key id="key_loadWizard" modifiers="control, shift" key="&asm.keyset.key.asm;" keytext="&asm.keyset.key.asm;" command="cmd_loadWizard" />
+  </keyset>
+
+  <menupopup id="menu_ToolsPopup">
+    <menuitem insertafter="devToolsSep, javascriptConsole" label="&asm.menuitem.label.asm;" accesskey="&asm.menuitem.accesskey.asm;" key="key_loadWizard" command="cmd_loadWizard" />
+  </menupopup>
+
+</overlay>

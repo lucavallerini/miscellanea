@@ -1,0 +1,28 @@
+<!--
+* Entities list about:
+*   chrome://xzmenu/content/search.xul
+*
+* @ author:         Luca90
+* @ homepage:       http://www.luca90.netsons.org/site/addons/index.php
+* @ email:          lucavall90@gmail.com
+* @ subversion:     0.2.1
+* @ last modified:  30th June 2007 19:03 pm 
+*
+* Notes:
+*   Check comments language 
+-->
+
+<!ENTITY xz.window.title.search "Finestra di ricerca">  
+  
+  <!ENTITY xz.description.search "Cerca:">
+    
+    <!ENTITY xz.radio.label.ext "estensioni">
+      <!ENTITY xz.radio.accesskey.ext "e">
+    <!ENTITY xz.radio.label.site "nel sito">
+      <!ENTITY xz.radio.accesskey.site "s">
+   <!ENTITY xz.radio.label.forum "nel forum">
+      <!ENTITY xz.radio.accesskey.forum "f">
+    <!ENTITY xz.button.label.search "Cerca">
+      <!ENTITY xz.button.accesskey.search "C">
+    <!ENTITY xz.button.label.cancel "Annulla">
+      <!ENTITY xz.button.accesskey.cancel "A">

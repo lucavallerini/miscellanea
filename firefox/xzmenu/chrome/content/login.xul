@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://xzmenu/locale/login.dtd">
+<!--
+* Login window
+*
+* @ author:         Luca90
+* @ homepage:       http://www.luca90.netsons.org/site/addons/index.php
+* @ email:          lucavall90@gmail.com
+* @ subversion:     0.4.2
+* @ last modified:  27th August 2007 12:08 am 
+* 
+-->
+
+<window title="&xz.window.title.login;"
+        id="login"
+	      xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	      onload="getFocus('user');">
+	
+	<script type="application/x-javascript" src="js/shared.js" />
+  <script type="application/x-javascript" src="js/login.js" />
+	
+	<stringbundleset>
+	 <stringbundle id="loginout" src="chrome://xzmenu/locale/login.properties" />
+  </stringbundleset>
+	
+	<commandset>
+		<command id="cmd_EnabledDisabledCookieLength" oncommand="getEnabledDisabled('cookielengthexpire', 'cookielength');" />
+		<command id="cmd_getLogin" oncommand="getLogin();" />
+		<command id="cmd_close" oncommand="close();" />
+	</commandset>
+
+	<hbox>
+		<description value="&xz.description.value.user;" />
+		<textbox id="user" flex="1" tabindex="1"/>
+	</hbox>
+	<hbox>
+		<description value="&xz.description.value.passwrd;" />
+		<textbox id="passwrd" type="password" flex="1" tabindex="2" />
+	</hbox>
+	<hbox>
+		<description value="&xz.description.value.cookielength;" />
+		<textbox id="cookielength" flex="1" value="60" tabindex="3" />
+	</hbox>
+	<hbox>
+		<checkbox id="cookielengthexpire" flex="1" tabindex="4" label="&xz.checkbox.label.cookielengthexpire;" accesskey="&xz.checkbox.accesskey.cookielengthexpire;" command="cmd_EnabledDisabledCookieLength" />
+	</hbox>
+	<hbox>
+	 <button tabindex="5" label="&xz.button.label.login;" accesskey="&xz.button.accesskey.login;" command="cmd_getLogin" />
+	 <button tabindex="6" label="&xz.button.label.cancel;" accesskey="&xz.button.accesskey.cancel;" command="cmd_close" />
+	</hbox>
+  
+</window>

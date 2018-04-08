@@ -1,0 +1,58 @@
+<!ENTITY window.title.addons "Rilascia estensione">
+
+	<!ENTITY tab.label.general "Informazioni generali">
+	<!ENTITY tab.label.comp "Compatibilità">
+	<!ENTITY tab.label.other "Altro">
+	<!ENTITY tab.label.output "Output">
+	
+	<!ENTITY description.value.name "Nome:">
+	<!ENTITY description.value.author "Autore:">
+	<!ENTITY description.value.localizator "Tradotta da:">
+	<!ENTITY description.value.version "Versione:">
+	<!ENTITY description.value.lastupdate "Data:">
+	 <!ENTITY button.tooltiptext.getdate "Clicca per avere la data odierna">
+	<!ENTITY description.value.size "Dimensione:">
+	<!ENTITY description.value.website "Sito web:">
+	<!ENTITY description.value.description "Descrizione:">
+	
+	<!ENTITY checkbox.label.ff "Mozilla Firefox">
+	 <!ENTITY checkbox.accesskey.ff "F">
+	<!ENTITY checkbox.label.tb "Mozilla Thunderbird">
+   <!ENTITY checkbox.accesskey.tb "T">
+  <!ENTITY checkbox.label.ms "Mozilla Application Suite">
+	 <!ENTITY checkbox.accesskey.ms "A">
+	<!ENTITY checkbox.label.sm "Mozilla SeaMonkey">
+	 <!ENTITY checkbox.accesskey.sm "S">
+	<!ENTITY checkbox.label.sb "Mozilla Sunbird">
+	 <!ENTITY checkbox.accesskey.sb "b">
+	<!ENTITY checkbox.label.nvu "NVU Composer">
+	 <!ENTITY checkbox.accesskey.nvu "V">
+	<!ENTITY checkbox.label.ns "Netscape Navigator">
+	 <!ENTITY checkbox.accesskey.ns "N">
+	<!ENTITY checkbox.label.fl "Flock">
+	 <!ENTITY checkbox.accesskey.fl "l">
+	
+	<!ENTITY description.value.link "Link estensione:">
+	<!ENTITY description.value.screens "Screenshots:">
+	
+	<!ENTITY checkbox.label.brutal "Estensione tradotta brutalmente">
+	 <!ENTITY checkbox.accesskey.brutal "b">
+	<!ENTITY checkbox.label.itIT "Estensione localizzata, riconosciuta dall'autore">
+	 <!ENTITY checkbox.accesskey.itIT "l">
+	<!ENTITY checkbox.label.bug "Estensione che presenta problemi/incompatibilità con altre estensioni">
+	 <!ENTITY checkbox.accesskey.bug "p">
+	 <!ENTITY checkbox.value.buglist "Elenco BUG:">
+	
+	<!ENTITY description.value.output "Visualizza l'anteprima del codice:">
+		<!ENTITY button.label.refresh "Aggiorna">
+		 <!ENTITY button.accesskey.refresh "A">
+		<!ENTITY button.label.zipfile "Analizza xpi">
+		  <!ENTITY button.accesskey.zipfile "x">
+		<!ENTITY button.label.select "Copia">
+		 <!ENTITY button.accesskey.select "C">
+		<!ENTITY button.label.export "Esporta">
+		 <!ENTITY button.accesskey.export "E">
+		<!ENTITY button.label.import "Importa">
+		 <!ENTITY button.accesskey.import "I">
+		<!ENTITY button.label.close "Chiudi">
+		 <!ENTITY button.accesskey.close "i">

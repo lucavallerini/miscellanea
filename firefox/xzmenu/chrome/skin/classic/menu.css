@@ -1,0 +1,118 @@
+/* Cascading Style Sheets - Menu Icons*/
+/* Icons provide by FamFamFam's set by Mark James [http://www.famfamfam.com/] */
+
+.homepage {
+ list-style-image: url("chrome://xzmenu/skin/icons/home.png") !important;
+}
+
+.forum {
+ list-style-image: url("chrome://xzmenu/skin/icons/forum.png") !important;
+}
+
+.rss {
+ list-style-image: url("chrome://xzmenu/skin/icons/feed.png") !important;
+}
+
+.search {
+ list-style-image: url("chrome://xzmenu/skin/icons/search.png") !important;
+}
+
+.exts {
+ list-style-image: url("chrome://xzmenu/skin/icons/exts.png") !important;
+}
+
+.themes {
+ list-style-image: url("chrome://xzmenu/skin/icons/themes.png") !important;
+}
+
+.tutorials {
+ list-style-image: url("chrome://xzmenu/skin/icons/tutorials.png") !important;
+}
+
+.links {
+ list-style-image: url("chrome://xzmenu/skin/icons/links.png") !important;
+}
+
+.ff {
+ list-style-image: url("chrome://xzmenu/skin/icons/ff.png") !important;
+}
+
+.tb {
+ list-style-image: url("chrome://xzmenu/skin/icons/tb.png") !important;
+}
+
+.sm {
+ list-style-image: url("chrome://xzmenu/skin/icons/sm.png") !important;
+}
+
+.sb {
+ list-style-image: url("chrome://xzmenu/skin/icons/sb.png") !important;
+}
+
+.nvu {
+ list-style-image: url("chrome://xzmenu/skin/icons/nvu.png") !important;
+}
+
+.ns {
+ list-style-image: url("chrome://xzmenu/skin/icons/ns.png") !important;
+}
+
+.fl {
+ list-style-image: url("chrome://xzmenu/skin/icons/fl.png") !important;
+}
+
+.maintopic {
+ list-style-image: url("chrome://xzmenu/skin/icons/folder.png") !important;
+}
+
+.unread, .unreadreplies {
+ list-style-image: url("chrome://xzmenu/skin/icons/unread.png") !important;
+}
+
+.tools {
+ list-style-image: url("chrome://xzmenu/skin/icons/tools.png") !important;
+}
+
+.profile {
+ list-style-image: url("chrome://xzmenu/skin/icons/profile.png") !important;
+}
+
+.babelzilla {
+ list-style-image: url("chrome://xzmenu/skin/icons/babelzilla.png") !important;
+}
+
+.mozillaitalia {
+ list-style-image: url("chrome://xzmenu/skin/icons/mozillaitalia.png") !important;
+}
+
+.mozilla {
+ list-style-image: url("chrome://xzmenu/skin/icons/mozilla.png") !important;
+}
+
+.addonsmirror {
+ list-style-image: url("chrome://xzmenu/skin/icons/addonsmirror.png") !important;
+}
+
+.completelist {
+ list-style-image: url("chrome://xzmenu/skin/icons/completelist.png") !important;
+}
+
+.releaseexts {
+ list-style-image: url("chrome://xzmenu/skin/icons/exts_add.png") !important;
+}
+
+.log {
+ list-style-image: url("chrome://xzmenu/skin/icons/log.png") !important;
+}
+
+.extenzilla {
+ list-style-image: url("chrome://xzmenu/skin/icons/extenzilla.png") !important;
+}
+
+#extenzilla {
+  list-style-image: url("chrome://xzmenu/skin/icons/extenzilla_24x24.png") !important;
+}
+
+toolbar[iconsize="small"] #extenzilla {
+  list-style-image: url("chrome://xzmenu/skin/icons/extenzilla_16x16.png") !important;
+}

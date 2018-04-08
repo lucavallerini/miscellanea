@@ -1,0 +1,29 @@
+<!--
+* Entities list about:
+*   chrome://xzmenu/content/login.xul
+*
+* @ author:         Luca90
+* @ homepage:       http://www.luca90.netsons.org/site/addons/index.php
+* @ email:          lucavall90@gmail.com
+* @ subversion:     0.2
+* @ last modified:  17th June 2007 11:32 am 
+*
+* Notes:
+*   Check comments language 
+-->
+
+<!ENTITY xz.window.title.login "Login">
+  <!ENTITY xz.dialog.buttonlabelaccept.login "Login">
+    <!ENTITY xz.dialog.buttonaccesskeyaccept.login "L">
+  <!ENTITY xz.dialog.buttonlabelcancel.cancel "Annulla">
+    <!ENTITY xz.dialog.buttonaccesskeycancel.cancel "A">
+  
+  <!ENTITY xz.description.value.user "Nome utente:">
+  <!ENTITY xz.description.value.passwrd "Password:">
+  <!ENTITY xz.description.value.cookielength "Minuti prima del logout:">
+  <!ENTITY xz.checkbox.label.cookielengthexpire "Non effettuare mai il logout">
+    <!ENTITY xz.checkbox.accesskey.cookielengthexpire "N">
+  <!ENTITY xz.button.label.login "Login">
+    <!ENTITY xz.button.accesskey.login "L">
+  <!ENTITY xz.button.label.cancel "Annulla">
+    <!ENTITY xz.button.accesskey.cancel "A">

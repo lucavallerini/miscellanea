@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://xzmenu/skin/menu.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://xzmenu/locale/menu.dtd">
+<!--
+* Menubar extension menu
+*
+* @ author:         Luca90
+* @ homepage:       http://www.luca90.netsons.org/site/addons/index.php
+* @ email:          lucavall90@gmail.com
+* @ subversion:     0.4.7
+* @ last modified:  27th August 2007 12:02 am 
+* 
+-->
+
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" id="overlay">
+	
+	<script type="application/x-javascript" src="js/shared.js" />
+	
+ 	<menubar id="main-menubar">
+		<menu id="xzmenu" insertafter="menu_Help, mimenu-menu, helpMenu, " class="menu-iconic extenzilla" label="&xz.menu.label.extenzilla;" accesskey="&xz.menu.accesskey.extenzilla;">
+			<menupopup>
+				<menuitem class="menuitem-iconic homepage" label="&xz.menuitem.label.homepage;" accesskey="&xz.menuitem.accesskey.homepage;" onclick="load(event, 'http://www.extenzilla.org/');" />
+				<menu class="menu-iconic forum" label="&xz.menu.label.forum;" accesskey="&xz.menu.accesskey.forum;">
+					<menupopup>
+						<menuitem class="menuitem-iconic homepage" label="&xz.menuitem.label.homeforum;" accesskey="&xz.menuitem.accesskey.homeforum;" onclick="load(event, 'http://forum.extenzilla.org/index.php');" />
+						<menuseparator />
+						<menuitem class="menuitem-iconic unread" label="&xz.menuitem.label.unread;" accesskey="&xz.menuitem.accesskey.unread;" onclick="load(event, 'http://forum.extenzilla.org/index.php?action=unread');" />
+						<menuitem class="menuitem-iconic unreadreplies" label="&xz.menuitem.label.unreadreplies;" accesskey="&xz.menuitem.accesskey.unreadreplies;" onclick="load(event, 'http://forum.extenzilla.org/index.php?action=unreadreplies');" />
+						<menuseparator />
+						<menuitem class="menuitem-iconic maintopic" label="&xz.menuitem.label.news;" accesskey="&xz.menuitem.accesskey.news;" onclick="load(event, 'http://forum.extenzilla.org/index.php?board=11.0');" />
+						<menuitem class="menuitem-iconic maintopic" label="&xz.menuitem.label.bugs;" accesskey="&xz.menuitem.accesskey.bugs;" onclick="load(event, 'http://forum.extenzilla.org/index.php?board=4.0');" />
+						<menuitem class="menuitem-iconic maintopic" label="&xz.menuitem.label.extsupport;" accesskey="&xz.menuitem.accesskey.extsupport;" onclick="load(event, 'http://forum.extenzilla.org/index.php?board=5.0');" />
+						<menuitem class="menuitem-iconic maintopic" label="&xz.menuitem.label.internationalsupport;" accesskey="&xz.menuitem.accesskey.internationalsupport;" onclick="load(event, 'http://forum.extenzilla.org/index.php?board=6.0');" />
+						<menuitem class="menuitem-iconic maintopic" label="&xz.menuitem.label.extsdocs;" accesskey="&xz.menuitem.accesskey.extsdocs;" onclick="load(event, 'http://forum.extenzilla.org/index.php?board=10.0');" />
+						<menuitem class="menuitem-iconic maintopic" label="&xz.menuitem.label.newupdateexts;" accesskey="&xz.menuitem.accesskey.newupdateexts;" onclick="load(event, 'http://forum.extenzilla.org/index.php?board=13.0');" />
+						<menuitem class="menuitem-iconic maintopic" label="&xz.menuitem.label.publicqa;" accesskey="&xz.menuitem.accesskey.publicqa;" onclick="load(event, 'http://forum.extenzilla.org/index.php?board=16.0');" />
+						<menuitem class="menuitem-iconic maintopic" label="&xz.menuitem.label.offtopic;" accesskey="&xz.menuitem.accesskey.offtopic;" onclick="load(event, 'http://forum.extenzilla.org/index.php?board=8.0');" />
+						<menuitem class="menuitem-iconic maintopic" label="&xz.menuitem.label.extenzelig;" accesskey="&xz.menuitem.accesskey.extenzelig;" onclick="load(event, 'http://forum.extenzilla.org/index.php?board=15.0');" />
+					</menupopup>
+				</menu>
+				<menuseparator />
+				<menu class="menu-iconic tools" label="&xz.menu.label.tools;" accesskey="&xz.menu.accesskey.tools;">
+					<menupopup>
+						<menuitem class="menuitem-iconic log" id='log' label="&xz.menuitem.label.loginout;" accesskey="&xz.menuitem.accesskey.loginout;" onclick="window.open('chrome://xzmenu/content/login.xul', '', 'chrome, width=auto, height=auto, centerscreen=yes, resizable=no, dialog=yes, minimizable=yes');" />
+						<menuseparator />
+						<menuitem class="menuitem-iconic search" label="&xz.menuitem.label.search;" accesskey="&xz.menuitem.accesskey.search;" onclick="window.open('chrome://xzmenu/content/search.xul', '', 'chrome, width=auto, height=auto, centerscreen=yes, resizable=no, dialog=yes, minimizable=yes');" />
+						<menuitem class="menuitem-iconic profile" label="&xz.menuitem.label.viewprofile;" accesskey="&xz.menuitem.accesskey.viewprofile;" onclick="load(event, 'http://forum.extenzilla.org/index.php?action=profile');" />
+						<menuitem class="menuitem-iconic releaseexts" label="&xz.menuitem.label.releaseexts;" accesskey="&xz.menuitem.accesskey.releaseexts;" onclick="window.open('chrome://xzmenu/content/addons.xul', '', 'chrome, width=auto, height=auto, centerscreen=yes, resizable=no, dialog=yes, minimizable=yes');" />
+						<menu class="menu-iconic rss" label="&xz.menu.label.feedrss;" accesskey="&xz.menu.accesskey.feedrss;">
+							<menupopup>
+								<menuitem class="menuitem-iconic exts" label="&xz.menuitem.label.exts;" accesskey="&xz.menuitem.accesskey.exts;" onclick="load(event, 'http://www.extenzilla.org/ext.xml');" />
+								<menuitem class="menuitem-iconic themes" label="&xz.menuitem.label.themes;" accesskey="&xz.menuitem.accesskey.themes;" onclick="load(event, 'http://www.extenzilla.org/temi.xml');" />
+							</menupopup>
+						</menu>
+					</menupopup>
+				</menu>
+				<menuseparator />
+				<menuitem class="menuitem-iconic tutorials" label="&xz.menuitem.label.tutorials;" accesskey="&xz.menuitem.accesskey.tutorials;" onclick="load(event, 'http://www.extenzilla.org/guide.php');" />
+				<menu class="menu-iconic exts" label="&xz.menu.label.exts;" accesskey="&xz.menu.accesskey.exts;">
+					<menupopup>
+						<menuitem class="menuitem-iconic ff" label="&xz.menuitem.label.ff;" accesskey="&xz.menuitem.accesskey.ff;" onclick="load(event, 'http://www.extenzilla.org/estensioni.php?ordine=c&amp;comp=ff');" />
+						<menuitem class="menuitem-iconic tb" label="&xz.menuitem.label.tb;" accesskey="&xz.menuitem.accesskey.tb;" onclick="load(event, 'http://www.extenzilla.org/estensioni.php?ordine=c&amp;comp=tb');" />
+						<menuitem class="menuitem-iconic sm" label="&xz.menuitem.label.sm;" accesskey="&xz.menuitem.accesskey.sm;" onclick="load(event, 'http://www.extenzilla.org/estensioni.php?ordine=c&amp;comp=sm');" />
+						<menuitem class="menuitem-iconic nvu" label="&xz.menuitem.label.nvu;" accesskey="&xz.menuitem.accesskey.nvu;" onclick="load(event, 'http://www.extenzilla.org/estensioni.php?ordine=c&amp;comp=nvu');" />
+						<menuitem class="menuitem-iconic sb" label="&xz.menuitem.label.sb;" accesskey="&xz.menuitem.accesskey.sb;" onclick="load(event, 'http://www.extenzilla.org/estensioni.php?ordine=c&amp;comp=sb');" />
+						<menuitem class="menuitem-iconic ns" label="&xz.menuitem.label.ns;" accesskey="&xz.menuitem.accesskey.ns;" onclick="load(event, 'http://www.extenzilla.org/estensioni.php?ordine=c&amp;comp=ns');" />
+						<menuitem class="menuitem-iconic fl" label="&xz.menuitem.label.fl;" accesskey="&xz.menuitem.accesskey.fl;" onclick="load(event, 'http://www.extenzilla.org/estensioni.php?ordine=c&amp;comp=fc');" />
+						<menuseparator />
+						<menuitem class="menuitem-iconic completelist" label="&xz.menuitem.label.completelist;" accesskey="&xz.menuitem.accesskey.completelist;" onclick="load(event, 'http://www.extenzilla.org/lista.php');" />
+					</menupopup>
+				</menu>
+				<menu class="menu-iconic themes" label="&xz.menu.label.themes;" accesskey="&xz.menu.accesskey.themes;">
+					<menupopup>
+						<menuitem class="menuitem-iconic ff" label="&xz.menuitem.label.ff;" accesskey="&xz.menuitem.accesskey.ff;" onclick="load(event, 'http://www.extenzilla.org/temi.php?ordine=c&amp;comp=ff');" />
+						<menuitem class="menuitem-iconic tb" label="&xz.menuitem.label.tb;" accesskey="&xz.menuitem.accesskey.tb;" onclick="load(event, 'http://www.extenzilla.org/temi.php?ordine=c&amp;comp=tb');" />
+						<menuitem class="menuitem-iconic sm" label="&xz.menuitem.label.sm;" accesskey="&xz.menuitem.accesskey.sm;" onclick="load(event, 'http://www.extenzilla.org/temi.php?ordine=c&amp;comp=sm');" />
+						<menuitem class="menuitem-iconic nvu" label="&xz.menuitem.label.nvu;" accesskey="&xz.menuitem.accesskey.nvu;" onclick="load(event, 'http://www.extenzilla.org/temi.php?ordine=c&amp;comp=nvu');" />
+						<menuitem class="menuitem-iconic sb" label="&xz.menuitem.label.sb;" accesskey="&xz.menuitem.accesskey.sb;" onclick="load(event, 'http://www.extenzilla.org/temi.php?ordine=c&amp;comp=sb');" />
+						<menuitem class="menuitem-iconic ns" label="&xz.menuitem.label.ns;" accesskey="&xz.menuitem.accesskey.ns;" onclick="load(event, 'http://www.extenzilla.org/temi.php?ordine=c&amp;comp=ns');" />
+						<menuitem class="menuitem-iconic fl" label="&xz.menuitem.label.fl;" accesskey="&xz.menuitem.accesskey.fl;" onclick="load(event, 'http://www.extenzilla.org/temi.php?ordine=c&amp;comp=fc');" />
+					</menupopup>
+				</menu>
+				<menu class="menu-iconic links" label="&xz.menu.label.links;" accesskey="&xz.menu.accesskey.links;">
+					<menupopup>
+						<menuitem class="menuitem-iconic babelzilla" label="&xz.menuitem.label.bz;" accesskey="&xz.menuitem.accesskey.bz;" onclick="load(event, 'http://www.babelzilla.org/');" />
+						<menuitem class="menuitem-iconic mozillaitalia" label="&xz.menuitem.label.mi;" accesskey="&xz.menuitem.accesskey.mi;" onclick="load(event, 'http://www.mozillaitalia.it/');" />
+						<menuitem class="menuitem-iconic mozilla" label="&xz.menuitem.label.mozorg;" accesskey="&xz.menuitem.accesskey.mozorg;" onclick="load(event, 'http://www.mozilla.org/');" />
+						<menuitem class="menuitem-iconic mozilla" label="&xz.menuitem.label.mozcom;" accesskey="&xz.menuitem.accesskey.mozcom;" onclick="load(event, 'http://www.mozilla.com/');" />
+						<menuitem class="menuitem-iconic mozilla" label="&xz.menuitem.label.amo;" accesskey="&xz.menuitem.accesskey.amo;" onclick="load(event, 'http://addons.mozilla.org/');" />
+						<menuitem class="menuitem-iconic addonsmirror" label="&xz.menuitem.label.addm;" accesskey="&xz.menuitem.accesskey.addm;" onclick="load(event, 'http://www.addonsmirror.net/');" />
+					</menupopup>
+				</menu>
+			</menupopup>
+		</menu> 
+	</menubar>
+	
+	<toolbarpalette id="BrowserToolbarPalette">
+    <toolbarbutton id="extenzilla" label="&xz.toolbarbutton.label.extenzilla;" orient="vertical" class="toolbarbutton-1 chromeclass-toolbar-additional" tooltiptext="Accedi ad eXtenZilla" type="menu">
+      <menupopup>
+				<menuitem class="menuitem-iconic homepage" label="&xz.menuitem.label.homepage;" accesskey="&xz.menuitem.accesskey.homepage;" onclick="load(event, 'http://www.extenzilla.org/');" />
+				<menu class="menu-iconic forum" label="&xz.menu.label.forum;" accesskey="&xz.menu.accesskey.forum;">
+					<menupopup>
+						<menuitem class="menuitem-iconic homepage" label="&xz.menuitem.label.homeforum;" accesskey="&xz.menuitem.accesskey.homeforum;" onclick="load(event, 'http://forum.extenzilla.org/index.php');" />
+						<menuseparator />
+						<menuitem class="menuitem-iconic unread" label="&xz.menuitem.label.unread;" accesskey="&xz.menuitem.accesskey.unread;" onclick="load(event, 'http://forum.extenzilla.org/index.php?action=unread');" />
+						<menuitem class="menuitem-iconic unreadreplies" label="&xz.menuitem.label.unreadreplies;" accesskey="&xz.menuitem.accesskey.unreadreplies;" onclick="load(event, 'http://forum.extenzilla.org/index.php?action=unreadreplies');" />
+						<menuseparator />
+						<menuitem class="menuitem-iconic maintopic" label="&xz.menuitem.label.news;" accesskey="&xz.menuitem.accesskey.news;" onclick="load(event, 'http://forum.extenzilla.org/index.php?board=11.0');" />
+						<menuitem class="menuitem-iconic maintopic" label="&xz.menuitem.label.bugs;" accesskey="&xz.menuitem.accesskey.bugs;" onclick="load(event, 'http://forum.extenzilla.org/index.php?board=4.0');" />
+						<menuitem class="menuitem-iconic maintopic" label="&xz.menuitem.label.extsupport;" accesskey="&xz.menuitem.accesskey.extsupport;" onclick="load(event, 'http://forum.extenzilla.org/index.php?board=5.0');" />
+						<menuitem class="menuitem-iconic maintopic" label="&xz.menuitem.label.internationalsupport;" accesskey="&xz.menuitem.accesskey.internationalsupport;" onclick="load(event, 'http://forum.extenzilla.org/index.php?board=6.0');" />
+						<menuitem class="menuitem-iconic maintopic" label="&xz.menuitem.label.extsdocs;" accesskey="&xz.menuitem.accesskey.extsdocs;" onclick="load(event, 'http://forum.extenzilla.org/index.php?board=10.0');" />
+						<menuitem class="menuitem-iconic maintopic" label="&xz.menuitem.label.newupdateexts;" accesskey="&xz.menuitem.accesskey.newupdateexts;" onclick="load(event, 'http://forum.extenzilla.org/index.php?board=13.0');" />
+						<menuitem class="menuitem-iconic maintopic" label="&xz.menuitem.label.publicqa;" accesskey="&xz.menuitem.accesskey.publicqa;" onclick="load(event, 'http://forum.extenzilla.org/index.php?board=16.0');" />
+						<menuitem class="menuitem-iconic maintopic" label="&xz.menuitem.label.offtopic;" accesskey="&xz.menuitem.accesskey.offtopic;" onclick="load(event, 'http://forum.extenzilla.org/index.php?board=8.0');" />
+						<menuitem class="menuitem-iconic maintopic" label="&xz.menuitem.label.extenzelig;" accesskey="&xz.menuitem.accesskey.extenzelig;" onclick="load(event, 'http://forum.extenzilla.org/index.php?board=15.0');" />
+					</menupopup>
+				</menu>
+				<menuseparator />
+				<menu class="menu-iconic tools" label="&xz.menu.label.tools;" accesskey="&xz.menu.accesskey.tools;">
+					<menupopup>
+						<menuitem class="menuitem-iconic log" id='log' label="&xz.menuitem.label.loginout;" accesskey="&xz.menuitem.accesskey.loginout;" onclick="window.open('chrome://xzmenu/content/login.xul', '', 'chrome, width=auto, height=auto, centerscreen=yes, resizable=no, dialog=yes, minimizable=yes');" />
+						<menuseparator />
+						<menuitem class="menuitem-iconic search" label="&xz.menuitem.label.search;" accesskey="&xz.menuitem.accesskey.search;" onclick="window.open('chrome://xzmenu/content/search.xul', '', 'chrome, width=auto, height=auto, centerscreen=yes, resizable=no, dialog=yes, minimizable=yes');" />
+						<menuitem class="menuitem-iconic profile" label="&xz.menuitem.label.viewprofile;" accesskey="&xz.menuitem.accesskey.viewprofile;" onclick="load(event, 'http://forum.extenzilla.org/index.php?action=profile');" />
+						<menuitem class="menuitem-iconic releaseexts" label="&xz.menuitem.label.releaseexts;" accesskey="&xz.menuitem.accesskey.releaseexts;" onclick="window.open('chrome://xzmenu/content/addons.xul', '', 'chrome, width=auto, height=auto, centerscreen=yes, resizable=no, dialog=yes, minimizable=yes');" />
+						<menu class="menu-iconic rss" label="&xz.menu.label.feedrss;" accesskey="&xz.menu.accesskey.feedrss;">
+							<menupopup>
+								<menuitem class="menuitem-iconic exts" label="&xz.menuitem.label.exts;" accesskey="&xz.menuitem.accesskey.exts;" onclick="load(event, 'http://www.extenzilla.org/ext.xml');" />
+								<menuitem class="menuitem-iconic themes" label="&xz.menuitem.label.themes;" accesskey="&xz.menuitem.accesskey.themes;" onclick="load(event, 'http://www.extenzilla.org/temi.xml');" />
+							</menupopup>
+						</menu>
+					</menupopup>
+				</menu>
+				<menuseparator />
+				<menuitem class="menuitem-iconic tutorials" label="&xz.menuitem.label.tutorials;" accesskey="&xz.menuitem.accesskey.tutorials;" onclick="load(event, 'http://www.extenzilla.org/guide.php');" />
+				<menu class="menu-iconic exts" label="&xz.menu.label.exts;" accesskey="&xz.menu.accesskey.exts;">
+					<menupopup>
+						<menuitem class="menuitem-iconic ff" label="&xz.menuitem.label.ff;" accesskey="&xz.menuitem.accesskey.ff;" onclick="load(event, 'http://www.extenzilla.org/estensioni.php?ordine=c&amp;comp=ff');" />
+						<menuitem class="menuitem-iconic tb" label="&xz.menuitem.label.tb;" accesskey="&xz.menuitem.accesskey.tb;" onclick="load(event, 'http://www.extenzilla.org/estensioni.php?ordine=c&amp;comp=tb');" />
+						<menuitem class="menuitem-iconic sm" label="&xz.menuitem.label.sm;" accesskey="&xz.menuitem.accesskey.sm;" onclick="load(event, 'http://www.extenzilla.org/estensioni.php?ordine=c&amp;comp=sm');" />
+						<menuitem class="menuitem-iconic nvu" label="&xz.menuitem.label.nvu;" accesskey="&xz.menuitem.accesskey.nvu;" onclick="load(event, 'http://www.extenzilla.org/estensioni.php?ordine=c&amp;comp=nvu');" />
+						<menuitem class="menuitem-iconic sb" label="&xz.menuitem.label.sb;" accesskey="&xz.menuitem.accesskey.sb;" onclick="load(event, 'http://www.extenzilla.org/estensioni.php?ordine=c&amp;comp=sb');" />
+						<menuitem class="menuitem-iconic ns" label="&xz.menuitem.label.ns;" accesskey="&xz.menuitem.accesskey.ns;" onclick="load(event, 'http://www.extenzilla.org/estensioni.php?ordine=c&amp;comp=ns');" />
+						<menuitem class="menuitem-iconic fl" label="&xz.menuitem.label.fl;" accesskey="&xz.menuitem.accesskey.fl;" onclick="load(event, 'http://www.extenzilla.org/estensioni.php?ordine=c&amp;comp=fc');" />
+						<menuseparator />
+						<menuitem class="menuitem-iconic completelist" label="&xz.menuitem.label.completelist;" accesskey="&xz.menuitem.accesskey.completelist;" onclick="load(event, 'http://www.extenzilla.org/lista.php');" />
+					</menupopup>
+				</menu>
+				<menu class="menu-iconic themes" label="&xz.menu.label.themes;" accesskey="&xz.menu.accesskey.themes;">
+					<menupopup>
+						<menuitem class="menuitem-iconic ff" label="&xz.menuitem.label.ff;" accesskey="&xz.menuitem.accesskey.ff;" onclick="load(event, 'http://www.extenzilla.org/temi.php?ordine=c&amp;comp=ff');" />
+						<menuitem class="menuitem-iconic tb" label="&xz.menuitem.label.tb;" accesskey="&xz.menuitem.accesskey.tb;" onclick="load(event, 'http://www.extenzilla.org/temi.php?ordine=c&amp;comp=tb');" />
+						<menuitem class="menuitem-iconic sm" label="&xz.menuitem.label.sm;" accesskey="&xz.menuitem.accesskey.sm;" onclick="load(event, 'http://www.extenzilla.org/temi.php?ordine=c&amp;comp=sm');" />
+						<menuitem class="menuitem-iconic nvu" label="&xz.menuitem.label.nvu;" accesskey="&xz.menuitem.accesskey.nvu;" onclick="load(event, 'http://www.extenzilla.org/temi.php?ordine=c&amp;comp=nvu');" />
+						<menuitem class="menuitem-iconic sb" label="&xz.menuitem.label.sb;" accesskey="&xz.menuitem.accesskey.sb;" onclick="load(event, 'http://www.extenzilla.org/temi.php?ordine=c&amp;comp=sb');" />
+						<menuitem class="menuitem-iconic ns" label="&xz.menuitem.label.ns;" accesskey="&xz.menuitem.accesskey.ns;" onclick="load(event, 'http://www.extenzilla.org/temi.php?ordine=c&amp;comp=ns');" />
+						<menuitem class="menuitem-iconic fl" label="&xz.menuitem.label.fl;" accesskey="&xz.menuitem.accesskey.fl;" onclick="load(event, 'http://www.extenzilla.org/temi.php?ordine=c&amp;comp=fc');" />
+					</menupopup>
+				</menu>
+				<menu class="menu-iconic links" label="&xz.menu.label.links;" accesskey="&xz.menu.accesskey.links;">
+					<menupopup>
+						<menuitem class="menuitem-iconic babelzilla" label="&xz.menuitem.label.bz;" accesskey="&xz.menuitem.accesskey.bz;" onclick="load(event, 'http://www.babelzilla.org/');" />
+						<menuitem class="menuitem-iconic mozillaitalia" label="&xz.menuitem.label.mi;" accesskey="&xz.menuitem.accesskey.mi;" onclick="load(event, 'http://www.mozillaitalia.it/');" />
+						<menuitem class="menuitem-iconic mozilla" label="&xz.menuitem.label.mozorg;" accesskey="&xz.menuitem.accesskey.mozorg;" onclick="load(event, 'http://www.mozilla.org/');" />
+						<menuitem class="menuitem-iconic mozilla" label="&xz.menuitem.label.mozcom;" accesskey="&xz.menuitem.accesskey.mozcom;" onclick="load(event, 'http://www.mozilla.com/');" />
+						<menuitem class="menuitem-iconic mozilla" label="&xz.menuitem.label.amo;" accesskey="&xz.menuitem.accesskey.amo;" onclick="load(event, 'http://addons.mozilla.org/');" />
+						<menuitem class="menuitem-iconic addonsmirror" label="&xz.menuitem.label.addm;" accesskey="&xz.menuitem.accesskey.addm;" onclick="load(event, 'http://www.addonsmirror.net/');" />
+					</menupopup>
+				</menu>
+			</menupopup>
+    </toolbarbutton>
+	</toolbarpalette>
+	
+</overlay>

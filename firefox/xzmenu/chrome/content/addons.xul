@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://xzmenu/skin/addons.css" type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://xzmenu/locale/addons.dtd">
+<!--
+* Extrelease window
+*
+* @ author:         Luca90
+* @ homepage:       http://www.luca90.netsons.org/site/addons/index.php
+* @ email:          lucavall90@gmail.com
+* @ subversion:     0.4
+* @ last modified:  27th August 2007 12:08 am
+*
+-->
+
+<window id="addons"
+        title="&window.title.addons;"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script type="application/x-javascript"
+          src="chrome://xzmenu/content/js/shared.js" />
+  <script type="application/x-javascript"
+          src="chrome://xzmenu/content/js/addons.js" />
+
+  <commandset>
+    <command id="cmd_EnabledDisabledFF" oncommand="if(document.getElementById('ffc').checked == true) {document.getElementById('fft').disabled = false;} else {document.getElementById('fft').disabled = true;}" />
+    <command id="cmd_EnabledDisabledTB" oncommand="if(document.getElementById('tbc').checked == true) {document.getElementById('tbt').disabled = false;} else {document.getElementById('tbt').disabled = true;}" />
+    <command id="cmd_EnabledDisabledSM" oncommand="if(document.getElementById('smc').checked == true) {document.getElementById('smt').disabled = false;} else {document.getElementById('smt').disabled = true;}" />
+    <command id="cmd_EnabledDisabledMS" oncommand="if(document.getElementById('msc').checked == true) {document.getElementById('mst').disabled = false;} else {document.getElementById('mst').disabled = true;}"/>
+    <command id="cmd_EnabledDisabledSB" oncommand="if(document.getElementById('sbc').checked == true) {document.getElementById('sbt').disabled = false;} else {document.getElementById('sbt').disabled = true;}" />
+    <command id="cmd_EnabledDisabledNVU" oncommand="if(document.getElementById('nvuc').checked == true) {document.getElementById('nvut').disabled = false;} else {document.getElementById('nvut').disabled = true;}" />
+    <command id="cmd_EnabledDisabledNS" oncommand="if(document.getElementById('nsc').checked == true) {document.getElementById('nst').disabled = false;} else {document.getElementById('nst').disabled = true;}" />
+    <command id="cmd_EnabledDisabledFL" oncommand="if(document.getElementById('flc').checked == true) {document.getElementById('flt').disabled = false;} else {document.getElementById('flt').disabled = true;}" />
+    <command id="cmd_EnabledDisabledBugList" oncommand="if(document.getElementById('bug').checked == true) {document.getElementById('buglist').disabled = false;} else {document.getElementById('buglist').disabled = true;}" />
+    <command id="cmd_getDate" oncommand="getDate();" />
+    <command id="cmd_getBBCode" oncommand="getBBCode();" />
+    <command id="cmd_copy" oncommand="copy();"/>
+    <command id="cmd_exportAll" oncommand="exportAll();" />
+    <command id="cmd_importAll" oncommand="importAll();" />
+    <command id="cmd_close" oncommand="window.close();" />
+  </commandset>
+
+  <stringbundleset>
+    <stringbundle id="addons" src="chrome://xzmenu/locale/addons.properties" />
+  </stringbundleset>
+
+  <tabbox>
+    <tabs>
+      <tab label="&tab.label.general;" />
+      <tab label="&tab.label.comp;" />
+      <tab label="&tab.label.other;" />
+      <tab label="&tab.label.output;" />
+    </tabs>
+
+    <tabpanels>
+
+      <tabpanel>
+        <groupbox flex="1">
+          <hbox>
+            <description value="&description.value.name;" />
+            <textbox id="name" flex="1" />
+          </hbox>
+          <hbox>
+            <description value="&description.value.author;" />
+            <textbox id="author" flex="1" />
+          </hbox>
+          <hbox>
+            <description value="&description.value.localizator;" />
+            <textbox id="localizator" flex="1" />
+          </hbox>
+          <hbox>
+            <description value="&description.value.version;" />
+            <textbox id="version" flex="1" />
+          </hbox>
+          <hbox>
+            <description value="&description.value.lastupdate;" />
+            <textbox id="lastupdate" />
+            <button tooltiptext="&button.tooltiptext.getdate;" command="cmd_getDate" label="..." />
+          </hbox>
+          <hbox>
+            <description value="&description.value.size;" />
+            <textbox id="size" flex="1" />
+          </hbox>
+          <hbox>
+            <description value="&description.value.website;" />
+            <textbox id="website" flex="1" />
+          </hbox>
+          <vbox>
+            <description value="&description.value.description;" />
+            <textbox multiline="true" id="description" />
+          </vbox>
+        </groupbox>
+      </tabpanel>
+
+      <tabpanel>
+        <groupbox flex="1">
+          <hbox>
+          <checkbox id="ffc" label="&checkbox.label.ff;" accesskey="&checkbox.accesskey.ff;" command="cmd_EnabledDisabledFF" />
+            <textbox id="fft" disabled="true" />
+          </hbox>
+          <hbox>
+            <checkbox id="tbc" label="&checkbox.label.tb;" accesskey="&checkbox.accesskey.tb;" command="cmd_EnabledDisabledTB" />
+            <textbox id="tbt" disabled="true" />
+          </hbox>
+          <hbox>
+            <checkbox id="msc" label="&checkbox.label.ms;" accesskey="&checkbox.accesskey.ms;" command="cmd_EnabledDisabledMS" />
+            <textbox id="mst" disabled="true" />
+          </hbox>
+          <hbox>
+            <checkbox id="smc" label="&checkbox.label.sm;" accesskey="&checkbox.accesskey.sm;" command="cmd_EnabledDisabledSM" />
+            <textbox id="smt" disabled="true" />
+          </hbox>
+          <hbox>
+            <checkbox id="sbc" label="&checkbox.label.sb;" accesskey="&checkbox.accesskey.sb;" command="cmd_EnabledDisabledSB" />
+            <textbox id="sbt" disabled="true" />
+          </hbox>
+          <hbox>
+            <checkbox id="nvuc" label="&checkbox.label.nvu;" accesskey="&checkbox.accesskey.nvu;" command="cmd_EnabledDisabledNVU" />
+            <textbox id="nvut" disabled="true" />
+          </hbox>
+          <hbox>
+            <checkbox id="nsc" label="&checkbox.label.ns;" accesskey="&checkbox.accesskey.ns;" command="cmd_EnabledDisabledNS" />
+            <textbox id="nst" disabled="true" />
+          </hbox>
+          <hbox>
+            <checkbox id="flc" label="&checkbox.label.fl;" accesskey="&checkbox.accesskey.fl;" command="cmd_EnabledDisabledFL" />
+            <textbox id="flt" disabled="true" />
+          </hbox>
+        </groupbox>
+      </tabpanel>
+
+      <tabpanel>
+        <groupbox flex="1">
+          <description value="&description.value.link;" />
+          <textbox id="uplink" />
+          <description value="&description.value.screens;" />
+          <textbox id="screen0" />
+          <textbox id="screen1" />
+          <textbox id="screen2" />
+          <checkbox id="brutal" label="&checkbox.label.brutal;" accesskey="&checkbox.accesskey.brutal;" />
+          <checkbox id="itIT" label="&checkbox.label.itIT;" accesskey="&checkbox.accesskey.itIT;" />
+          <checkbox id="bug" command="cmd_EnabledDisabledBugList" label="&checkbox.label.bug;" accesskey="&checkbox.accesskey.bug;" />
+          <description value="&checkbox.value.buglist;" />
+          <textbox id="buglist" disabled="true" multiline="true" />
+        </groupbox>
+      </tabpanel>
+
+      <tabpanel>
+        <groupbox flex="1">
+          <description value="&description.value.output;" />
+          <textbox id="output" rows="11" multiline="true" />
+          <hbox>
+            <button id="refresh" label="&button.label.refresh;" accesskey="&button.accesskey.refresh;" command="cmd_getBBCode" />
+            <button id="selectall" label="&button.label.select;" accesskey="&button.accesskey.select;" command="cmd_copy" />
+            <button id="export" label="&button.label.export;" accesskey="&button.accesskey.export;" command="cmd_exportAll" />
+            <button id="import" label="&button.label.import;" accesskey="&button.accesskey.import;" command="cmd_importAll" />
+            <button id="close" label="&button.label.close;" accesskey="&button.accesskey.close;" command="cmd_close" />
+          </hbox>
+        </groupbox>
+      </tabpanel>
+
+    </tabpanels>
+  </tabbox>
+
+</window>

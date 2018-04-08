@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://xzmenu/locale/search.dtd">
+<!--
+* Search window
+*
+* @ author:         Luca90
+* @ homepage:       http://www.luca90.netsons.org/site/addons/index.php
+* @ email:          lucavall90@gmail.com
+* @ subversion:     0.3
+* @ last modified:  27th July 2007 15:26 pm 
+* 
+-->
+
+<window title="&xz.window.title.search;" id="search" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"	onload="getFocus('searchbox');">
+  
+  <script type="application/x-javascript" src="js/shared.js" />
+  <script type="application/x-javascript" src="js/search.js" />
+  
+  <stringbundleset>
+	 <stringbundle id="search" src="chrome://xzmenu/locale/search.properties" />
+  </stringbundleset>
+  
+  <commandset>
+    <command id="cmd_getSearch" oncommand="getSearch();" />
+    <command id="cmd_close" oncommand="close();" />
+  </commandset>
+  
+  <textbox id="searchbox" tabindex="1" />
+  
+  <hbox>
+	 <description>&xz.description.search;</description>
+  
+	 <radiogroup orient="horizontal" tabindex="2">  
+		<radio id="ext" selected="true" label="&xz.radio.label.ext;" accesskey="&xz.radio.accesskey.ext;" />
+		<radio id="site" label="&xz.radio.label.site;" accesskey="&xz.radio.accesskey.site;" />
+		<radio id="forum" label="&xz.radio.label.forum;" accesskey="&xz.radio.accesskey.forum;" />
+	 </radiogroup>
+  </hbox>
+  
+  <hbox>
+    <button tabindex="3" label="&xz.button.label.search;" accesskey="&xz.button.accesskey.search;" command="cmd_getSearch" />
+    <button tabindex="4" label="&xz.button.label.cancel;" accesskey="&xz.button.accesskey.cancel;" command="cmd_close" />
+  </hbox>
+  
+</window>

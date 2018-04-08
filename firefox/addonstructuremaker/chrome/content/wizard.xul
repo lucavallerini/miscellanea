@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<!DOCTYPE wizard SYSTEM "chrome://asm/locale/wizard.dtd">
+
+<wizard id="wizard" 
+        title="&asm.wizard.title;"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  
+  <script type="application/x-javascript" src="chrome://asm/content/js/shared.js" />
+  <script type="application/x-javascript" src="chrome://asm/content/js/wizard.js" />
+  <script type="application/x-javascript" src="chrome://asm/content/js/makeStructure.js" />
+  
+  <commandset id="asm-wizard">
+    <command id="cmd_targetApplication" oncommand="addMinMaxVers();" />
+    <command id="cmd_getGUID" oncommand="window.open('http://extensions.roachfiend.com/cgi-bin/guid.pl', '', 'chrome, centerscreen=yes, width=auto, height=auto, resizable=yes');" />
+  </commandset>
+  
+  <wizardpage label="Quale componente aggiuntivo si desidera creare?" 
+              description="Scegliere il componente aggiuntivo che si desidera creare.">
+    <vbox>
+      <radiogroup tabindex="1">
+        <radio id="extension" label="Estensione" selected="true" />
+        <radio id="theme" label="Tema" disabled="true" />
+        <radio id="locale" label="Localizzazione" disabled="true" />
+        <radio id="plugin" label="Plugin" disabled="true" />
+        <radio id="multi-package-item" label="Pacchetto di componenti multipli" disabled="true" />
+      </radiogroup>
+    </vbox>
+  </wizardpage>
+  
+  <wizardpage label="Con che programmi e versioni è compatibile il componente aggiuntivo?"
+              description="Settare le impostazioni di compatibilità del componente aggiuntivo.">
+    <vbox>
+      <checkbox id="ff" tabindex="1" label="Mozilla Firefox" accesskey="F" image="chrome://asm/skin/ff.png" command="cmd_targetApplication" />
+      <checkbox id="tb" tabindex="2" label="Mozilla Thunderbird" accesskey="T" command="cmd_targetApplication" />
+      <checkbox id="ms" tabindex="3" label="Mozilla Application Suite" accesskey="A" command="cmd_targetApplication" />
+      <checkbox id="sm" tabindex="4" label="SeaMonkey" accesskey="M" command="cmd_targetApplication" />
+      <checkbox id="sb" tabindex="5" label="Mozilla Sunbird" accesskey="S" command="cmd_targetApplication" />
+      <checkbox id="nvu" tabindex="6" label="NVU" accesskey="V" command="cmd_targetApplication" />
+      <checkbox id="ns" tabindex="7" label="Netscape Navigator" accesskey="N" command="cmd_targetApplication" />
+      <checkbox id="fl" tabindex="8" label="Flock" accesskey="l" command="cmd_targetApplication" />
+    </vbox>  
+  </wizardpage>
+  
+  <wizardpage label="Dati obbligatori" description="">
+    <vbox>
+      <hbox>
+        <label value="ID:" />
+        <textbox id="id" tabindex="1" />
+        <button label="Genera GUID" accesskey="G" tabindex="2" command="cmd_getGUID" />
+      </hbox>
+      <hbox>
+        <label value="Nome:" />
+        <textbox id="name" tabindex="2" class="plain" />
+      </hbox>
+      <hbox>
+        <label value="Versione:" />
+        <textbox id="version" tabinex="3" class="plain" />
+      </hbox>
+      <hbox>
+        <label value="Autore:" />
+        <textbox id="author" tabindex="4" class="plain" />
+      </hbox>
+    </vbox>
+  </wizardpage>
+  
+</wizard>
